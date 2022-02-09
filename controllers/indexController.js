@@ -15,9 +15,5 @@ exports.getProfile = (req, res) => {
   const email = currentUser ? currentUser.email : ""
   const msg = currentUser ? currentUser.msg : ""
 
-  res.render("profile", {
-    username,
-    email,
-    msg,
-  });
+  res.render("profile");
 };
